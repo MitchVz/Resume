@@ -68,6 +68,10 @@ article ul {
 	padding: 0 40px;
 }
 
+#website {
+	display: none;
+}
+
 #headshot {
 	width: 14.5%;
 	float: left;
@@ -237,7 +241,6 @@ section:last-child {
 	#mainArea {
 		padding: 0 25px;
 	}
-
 	
 	.keySkills {
 	-moz-column-count:1;
@@ -254,11 +257,22 @@ section:last-child {
 @media print {
 	body {
 		background: white;
-
 	}
 	#cv {
-		width: 95%;
+		width: 100%;
 		margin: 0;
+	}
+
+	#mainArea {
+		padding: 0 32px 0 40px;
+	}
+
+	#website {
+		display: block;
+	}
+
+	#headshot {
+		display: none;
 	}
 
 	#name {
@@ -266,9 +280,33 @@ section:last-child {
 		width: 50%;
 	}
 
+	#name h1 {
+		font-size: 1.9em;
+		font-weight: 700;
+		font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+		margin-bottom: -6px;
+	}
+
+	#name h2 {
+		font-size: 1.5em;
+		margin-left: 2px;
+		font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	}
+
 	#contactDetails {
 		float: right;
+		text-align: right;
 		width: 50%;
+		font-size: .8em;
+	}
+
+	article ul {
+		font-size: .9em;
+		line-height: 1.4em;
+		padding-left: 19px;
+		margin-bottom: 15px;
+		color: #444;
+		list-style-type: circle;
 	}
 
 	.sectionTitle {
@@ -276,12 +314,30 @@ section:last-child {
 		width: 25%;
 	}
 
+	.sectionTitle h1 {
+		font-size: 1.2em;
+	}
+
 	.sectionContent {
 		float: right;
 		width: 72.5%;
 	}
 
+	.sectionContent h2 {
+		font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+		font-size: 1.2em;
+		margin-bottom: -2px;
+	}
+
+	p {
+		font-size: .9em;
+		line-height: 1.4em;
+		margin-bottom: 15px;
+		color: #444;
+	}
+
 	.keySkills {
+		font-size: .9em;
 		-moz-column-count:3;
 		-webkit-column-count:3;
 		column-count:3;
