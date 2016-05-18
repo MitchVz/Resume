@@ -5,24 +5,31 @@
 
 <meta name="viewport" content="width=device-width"/>
 <meta name="description" content="The Resume of Mitchell Kramer"/>
-<meta charset="UTF-8"> 
+<meta charset="UTF-8">
 
+<link rel="icon" href="favicon.ico">
 <link type="text/css" rel="stylesheet" href="style.css">
 <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
 
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$.get("http://ipinfo.io", function(response) {
+			console.log(response.city, response.country);
+		}, "jsonp");
+	</script>
 </head>
 <body id="top">
 <div id="cv" class="instaFade">
 	<div class="mainDetails">
 		<div id="headshot" class="quickFade">
-			<img src="headshot.png" alt="Mitch Kramer" />
+			<img src="headshot.png" alt="Mitchell Kramer" />
 		</div>
 		
 		<div id="name">
-			<h1 class="quickFade delayTwo">Mitch Kramer</h1>
+			<h1 class="quickFade delayTwo">Mitchell Kramer</h1>
 			<h2 class="quickFade delayThree">Web Application Consultant</h2>
 		</div>
 		
@@ -30,6 +37,7 @@
 			<ul>
 				<li>email: <a href="mailto:mitchelljkramer@gmail.com" target="_blank">mitchelljkramer@gmail.com</a></li>
 				<li>phone: 616-309-7838</li>
+				<li>website: <a href="http://mitchelljkramer.com">mitchelljkramer.com</a></li>
 			</ul>
 		</div>
 		<div class="clear"></div>
@@ -43,7 +51,11 @@
 				</div>
 				
 				<div class="sectionContent">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor metus, interdum at scelerisque in, porta at lacus. Maecenas dapibus luctus cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim. Vestibulum bibendum mattis dignissim. Proin id sapien quis libero interdum porttitor.</p>
+					<p>
+						I am a confident and motivated software developer with strong technical skills and excellent communication skills.
+						My years of experience as a consultant have taught me to quickly learn and adapt to a variety of frameworks.
+						In my current position, I leverage my communication and technical skills in order to deliver personalized and maintainable solutions.
+					</p>
 				</div>
 			</article>
 			<div class="clear"></div>
@@ -59,19 +71,31 @@
 				<article>
 					<h2>Application Development Consultant at Open Systems Technologies</h2>
 					<p class="subDetails">August 2013 - Present</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim. Vestibulum bibendum mattis dignissim. Proin id sapien quis libero interdum porttitor.</p>
+					<ul>
+						<li>Developed web application solutions to complex business problems</li>
+						<li>Collaborated with diverse development teams both on-site and remote</li>
+						<li>Managed scope, communicated decisions, and completed tasks in an agile development environment</li>
+					</ul>
 				</article>
 				
 				<article>
 					<h2>Head Lighting Technician at Calvin College</h2>
-					<p class="subDetails">Janruary 2011 - May 2014</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim. Vestibulum bibendum mattis dignissim. Proin id sapien quis libero interdum porttitor.</p>
+					<p class="subDetails">January 2011 - May 2014</p>
+					<ul>
+						<li>Head lighting technician for concerts and special events</li>
+						<li>Audio technician for other campus events</li>
+						<li>Taught and organized team of student lighting technicians</li>
+					</ul>
 				</article>
 				
 				<article>
 					<h2>Software Development Intern at MIT Lincoln Laboratory</h2>
 					<p class="subDetails">June 2013 - August 2013</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim. Vestibulum bibendum mattis dignissim. Proin id sapien quis libero interdum porttitor.</p>
+					<ul>
+						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+						<li>Donec ultricies massa et erat luctus hendrerit</li>
+						<li>Curabitur non consequat enim. Vestibulum bibendum mattis dignissim</li>
+					</ul>
 				</article>
 			</div>
 			<div class="clear"></div>
@@ -80,19 +104,20 @@
 		
 		<section>
 			<div class="sectionTitle">
-				<h1>Relevant Skills</h1>
+				<h1>Technical Skills</h1>
 			</div>
 			
 			<div class="sectionContent">
 				<ul class="keySkills">
-					<li>A Key Skill</li>
-					<li>A Key Skill</li>
-					<li>A Key Skill</li>
-					<li>A Key Skill</li>
-					<li>A Key Skill</li>
-					<li>A Key Skill</li>
-					<li>A Key Skill</li>
-					<li>A Key Skill</li>
+					<li>HTML/CSS</li>
+					<li>Javascript</li>
+					<li>C#</li>
+					<li>ASP.NET MVC</li>
+					<li>SQL</li>
+					<li>MEAN full stack</li>
+					<li>Meteor.js</li>
+					<li>Java</li>
+					<li>PHP</li>
 				</ul>
 			</div>
 			<div class="clear"></div>
@@ -108,8 +133,11 @@
 				<article>
 					<h2>Calvin College - Grand Rapids, MI</h2>
 					<p class="subDetails">September 2010 - May 2014</p>
-					<p>B.S. in Mathematics, B.S. in Computer Science</p>
-					<p style="margin-top: -20px;">3.87 GPA</p>
+					<ul>
+						<li>B.S. in Mathematics, B.S. in Computer Science</li>
+						<li>3.87 GPA</li>
+					</ul>
+
 				</article>
 			</div>
 			<div class="clear"></div>

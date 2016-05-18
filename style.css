@@ -1,25 +1,41 @@
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
-border:0;
-font:inherit;
-font-size:100%;
-margin:0;
-padding:0;
-vertical-align:baseline;
+	border:0;
+	font:inherit;
+	font-size:100%;
+	margin:0;
+	padding:0;
+	vertical-align:baseline;
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
-display:block;
+	display:block;
 }
 
-html, body {background: #181818; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222;}
+html, body {
+	background: #181818;
+	font-family: 'Lato', helvetica, arial, sans-serif;
+	font-size: 16px;
+	color: #222;
+}
 
-.clear {clear: both;}
+.clear {
+	clear: both;
+}
 
 p {
 	font-size: 1em;
 	line-height: 1.4em;
 	margin-bottom: 20px;
 	color: #444;
+}
+
+article ul {
+	font-size: 1em;
+	line-height: 1.4em;
+	padding-left: 19px;
+	margin-bottom: 20px;
+	color: #444;
+	list-style-type: circle;
 }
 
 #cv {
@@ -87,7 +103,7 @@ p {
 }
 
 #contactDetails ul li a, a[href^=tel] {
-	color: #444;
+	color: #0072A9;
 	text-decoration: none;
 	-webkit-transition: all .3s ease-in;
 	-moz-transition: all .3s ease-in;
@@ -97,7 +113,7 @@ p {
 }
 
 #contactDetails ul li a:hover { 
-	color: #0087C7;
+	color: #00a7ef;
 }
 
 
@@ -167,7 +183,7 @@ section:last-child {
 	#headshot {
 		display: none;
 	}
-	
+
 	.keySkills {
 	-moz-column-count:2;
 	-webkit-column-count:2;
@@ -181,27 +197,27 @@ section:last-child {
 		margin: 10px auto;
 		min-width: 280px;
 	}
-	
+
 	#headshot {
 		display: none;
 	}
-	
+
 	#name, #contactDetails {
 		float: none;
 		width: 100%;
 		text-align: center;
 	}
-	
+
 	.sectionTitle, .sectionContent {
 		float: none;
 		width: 100%;
 	}
-	
+
 	.sectionTitle {
 		margin-left: -2px;
 		font-size: 1.25em;
 	}
-	
+
 	.keySkills {
 		-moz-column-count:2;
 		-webkit-column-count:2;
@@ -236,11 +252,52 @@ section:last-child {
 }
 
 @media print {
-    #cv {
-        width: 100%;
-    }
+	body {
+		background: white;
+
+	}
+	#cv {
+		width: 95%;
+		margin: 0;
+	}
+
+	#name {
+		float: left;
+		width: 50%;
+	}
+
+	#contactDetails {
+		float: right;
+		width: 50%;
+	}
+
+	.sectionTitle {
+		float: left;
+		width: 25%;
+	}
+
+	.sectionContent {
+		float: right;
+		width: 72.5%;
+	}
+
+	.keySkills {
+		-moz-column-count:3;
+		-webkit-column-count:3;
+		column-count:3;
+	}
 }
 
+
+
+
+
+
+
+
+
+
+/* Animations */
 @-webkit-keyframes reset {
 	0% {
 		opacity: 0;
@@ -308,11 +365,11 @@ section:last-child {
     -webkit-animation-name: reset, fade-in;
     -webkit-animation-duration: 1.5s;
     -webkit-animation-timing-function: ease-in;
-	
+
 	-moz-animation-name: reset, fade-in;
     -moz-animation-duration: 1.5s;
     -moz-animation-timing-function: ease-in;
-	
+
 	animation-name: reset, fade-in;
     animation-duration: 1.5s;
     animation-timing-function: ease-in;
@@ -322,16 +379,16 @@ section:last-child {
     -webkit-animation-name: reset, fade-in;
     -webkit-animation-duration: 2.5s;
     -webkit-animation-timing-function: ease-in;
-	
+
 	-moz-animation-name: reset, fade-in;
     -moz-animation-duration: 2.5s;
     -moz-animation-timing-function: ease-in;
-	
+
 	animation-name: reset, fade-in;
     animation-duration: 2.5s;
     animation-timing-function: ease-in;
 }
- 
+
 .delayOne {
 	-webkit-animation-delay: 0, .5s;
 	-moz-animation-delay: 0, .5s;
