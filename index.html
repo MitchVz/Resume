@@ -17,7 +17,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<script type="text/javascript">
 		$.get("http://ipinfo.io", function(response) {
-			console.log(response.city, response.country);
+			console.log(response.city, response.state);
 		}, "jsonp");
 	</script>
 </head>
@@ -27,12 +27,12 @@
 		<div id="headshot" class="quickFade">
 			<img src="headshot.png" alt="Mitchell Kramer" />
 		</div>
-		
+
 		<div id="name">
 			<h1 class="quickFade delayTwo">Mitchell Kramer</h1>
 			<h2 class="quickFade delayThree">Web Application Consultant</h2>
 		</div>
-		
+
 		<div id="contactDetails" class="quickFade delayFour">
 			<ul>
 				<li>email: <a href="mailto:mitchelljkramer@gmail.com" target="_blank">mitchelljkramer@gmail.com</a></li>
@@ -42,14 +42,14 @@
 		</div>
 		<div class="clear"></div>
 	</div>
-	
+
 	<div id="mainArea" class="quickFade delayFive">
 		<section>
 			<article>
 				<div class="sectionTitle">
 					<h1>Personal Profile</h1>
 				</div>
-				
+
 				<div class="sectionContent">
 					<p>
 						I am a confident, motivated software developer with strong technical skills and excellent communication skills.
@@ -60,13 +60,13 @@
 			</article>
 			<div class="clear"></div>
 		</section>
-		
-		
+
+
 		<section>
 			<div class="sectionTitle">
 				<h1>Work Experience</h1>
 			</div>
-			
+
 			<div class="sectionContent">
 				<article>
 					<h2>Application Development Consultant at <a href="http://www.ostusa.com" class="subtleLink">Open Systems Technologies</a></h2>
@@ -86,7 +86,7 @@
 						<li>"The software he developed will be central to an upcoming California State-wide exercise this Fall [2013] for dozens of First Responder Organizations; this is a testament to the quality of Mitch's contributions." - Paul Bremyer, Manager </li>
 					</ul>
 				</article>
-				
+
 				<article>
 					<h2>Head Lighting Technician at <a href="http://www.calvin.edu" class="subtleLink">Calvin College</a></h2>
 					<p class="subDetails">January 2011 - May 2014</p>
@@ -99,35 +99,56 @@
 			</div>
 			<div class="clear"></div>
 		</section>
-		
-		
+
+
 		<section>
 			<div class="sectionTitle">
 				<h1>Technical Skills</h1>
 			</div>
 			
 			<div class="sectionContent">
-				<ul class="keySkills">
-					<li>HTML/CSS</li>
-					<li>Javascript</li>
-					<li>C#</li>
-					<li>ASP.NET MVC</li>
-					<li>SQL</li>
-					<li>MEAN full stack</li>
-					<li>Meteor.js</li>
-					<li>Java</li>
-					<li>PHP</li>
-				</ul>
+				<table>
+					<tr>
+						<th>Languages</th>
+						<th>Frameworks</th>
+						<th>Data Storage</th>
+					</tr>
+					<tr>
+						<td>HTML/CSS <span class="skillLevel">Expert</span></td>
+						<td>ASP.NET <span class="skillLevel">Expert</span></td>
+						<td>SQL <span class="skillLevel">Proficient</span></td>
+					</tr>
+					<tr>
+						<td>Javascript <span class="skillLevel">Proficient</span></td>
+						<td>Meteor.js <span class="skillLevel">Proficient</span></td>
+						<td>Redis <span class="skillLevel">Proficient</span></td>
+					</tr>
+					<tr>
+						<td>C# <span class="skillLevel">Proficient</span></td>
+						<td>Angular.js <span class="skillLevel">Proficient</span></td>
+						<td>NoSql <span class="skillLevel">Novice</span></td>
+					</tr>
+					<tr>
+						<td>Java <span class="skillLevel">Proficient</span></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>PHP <span class="skillLevel">Novice</span></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
 			</div>
 			<div class="clear"></div>
 		</section>
 		
-		
+
 		<section>
 			<div class="sectionTitle">
 				<h1>Education</h1>
 			</div>
-			
+
 			<div class="sectionContent">
 				<article>
 					<h2>Calvin College - Grand Rapids, MI</h2>

@@ -197,6 +197,29 @@ a.subtleLink:hover {
 	margin-bottom: 3px;
 }
 
+table {
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+table th {
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	margin-bottom: -2px;
+	padding-right: 15px;
+}
+
+table td {
+	padding-right: 20px;
+}
+
+table td .skillLevel {
+	float: right;
+	font-size: .8em;
+	font-style: italic;
+	padding-top: 2px;
+}
+
 @media all and (min-width: 602px) and (max-width: 800px) {
 	#headshot {
 		display: none;
@@ -206,6 +229,10 @@ a.subtleLink:hover {
 	-moz-column-count:2;
 	-webkit-column-count:2;
 	column-count:2;
+	}
+
+	table td .skillLevel {
+		display: none;
 	}
 }
 
@@ -240,6 +267,10 @@ a.subtleLink:hover {
 		-moz-column-count:2;
 		-webkit-column-count:2;
 		column-count:2;
+	}
+
+	table td .skillLevel {
+		display: none;
 	}
 }
 
@@ -324,6 +355,10 @@ a.subtleLink:hover {
 		list-style-type: circle;
 	}
 
+	section {
+		padding: 13px 0 0;
+	}
+
 	.sectionTitle {
 		float: left;
 		width: 25%;
@@ -357,18 +392,32 @@ a.subtleLink:hover {
 		-webkit-column-count:3;
 		column-count:3;
 	}
+
+	table {
+		padding-bottom: 5px;
+	}
+
+	table th {
+		font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+		font-size: 1.2em;
+		margin-bottom: -2px;
+		padding-right: 15px;
+	}
+
+	table td {
+		font-size: .7em;
+	}
+
+	table td .skillLevel {
+		display: block;
+		float: right;
+		font-size: .8em;
+		font-style: italic;
+		padding-top: 2px;
+	}
 }
 
-
-
-
-
-
-
-
-
-
-/* Animations */
+/*!* Animations *!*/
 @-webkit-keyframes reset {
 	0% {
 		opacity: 0;
