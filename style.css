@@ -18,6 +18,10 @@ html, body {
 	color: #222;
 }
 
+.mobile-only {
+	display: none;
+}
+
 .clear {
 	clear: both;
 }
@@ -296,6 +300,18 @@ table td .skillLevel {
 	#name h1 {
 		line-height: .8em;
 		margin-bottom: 4px;
+	}
+
+	.mobile-only {
+		display: block;
+	}
+
+	.desktop-only {
+		display: none;
+	}
+
+	table th {
+		padding-right: 5px;
 	}
 }
 
