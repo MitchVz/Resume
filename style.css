@@ -110,6 +110,7 @@ article ul {
 	color: #444;
 }
 
+article p a,
 #contactDetails ul li a, a[href^=tel] {
 	color: #0072A9;
 	text-decoration: none;
@@ -120,10 +121,10 @@ article ul {
 	transition: all .3s ease-in;
 }
 
+article p a:hover,
 #contactDetails ul li a:hover { 
 	color: #00a7ef;
 }
-
 
 section {
 	border-top: 1px solid #dedede;
